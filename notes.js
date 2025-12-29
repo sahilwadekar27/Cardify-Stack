@@ -99,15 +99,15 @@ cards_container.innerHTML = "";
 
 let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-  if (allTasks.length === 0) {
-  cards_container.innerHTML = `
-    <div class="empty-state">
-      <h2>No cards yet</h2>
-      <p>Click + to add your first card</p>
-    </div>
-  `;
-  return;
-}
+//   if (allTasks.length === 0) {
+//   cards_container.innerHTML = `
+//     <div class="empty-state">
+//       <h2>No cards yet</h2>
+//       <p>Click + to add your first card</p>
+//     </div>
+//   `;
+//   return;
+// }
 
 allTasks.forEach(function(task,index) {
 const card = document.createElement("div");
@@ -223,6 +223,7 @@ closeForm.addEventListener("click",function(){
 });
 
 });
+
 
 
 
