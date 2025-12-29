@@ -98,7 +98,7 @@ function showCards(){
 cards_container.innerHTML = "";
 
 let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-}
+
   if (allTasks.length === 0) {
   cards_container.innerHTML = `
     <div class="empty-state">
