@@ -99,25 +99,16 @@ cards_container.innerHTML = "";
 
 let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-//   if (allTasks.length === 0) {
-//   cards_container.innerHTML = `
-//     <div class="empty-state">
-//       <h2>No cards yet</h2>
-//       <p>Click + to add your first card</p>
-//     </div>
-//   `;
-//   return;
-// }
-if (!allTasks || allTasks.length === 0) {
-  allTasks = [{
-    fullname: "Sahil Wadekar",
-    town: "Mumbai",
-    purpose: "Demo Card",
-    imageURL: "https://i.pravatar.cc/150",
-    priority: "Important"
-  }];
-  localStorage.setItem("tasks", JSON.stringify(allTasks));
+  if (allTasks.length === 0) {
+  cards_container.innerHTML = `
+    <div class="empty-state">
+      <h2>No cards yet</h2>
+      <p>Click + to add your first card</p>
+    </div>
+  `;
+  return;
 }
+
 
 allTasks.forEach(function(task,index) {
 const card = document.createElement("div");
@@ -233,6 +224,7 @@ closeForm.addEventListener("click",function(){
 });
 
 });
+
 
 
 
