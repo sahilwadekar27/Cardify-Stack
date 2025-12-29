@@ -209,6 +209,9 @@ closeForm.addEventListener("click",function(){
 
 });
 
+console.log("JS Loaded");
+
+
 
 
 
