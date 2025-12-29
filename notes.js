@@ -44,17 +44,17 @@ form.addEventListener("submit",function(dets){
       selected=cat.value;
     }
   });
-  if(imageURL.value.trim()===""){
+  if(imageURL.value.trim() ===""){
     return alert("Please enter an image url");
   }
 
-  if (fullname.value.trim()===""){
+  if (fullname.value.trim() ===""){
     return alert("Please enter a name");
   }
-  if(town.value.trim===""){
+  if(town.value.trim() ===""){
     return alert("please enter town");
   }
-  if(purpose.value.trim===""){
+  if(purpose.value.trim() ===""){
     return alert("please enter purpose");
   }
   if(!selected){
@@ -217,6 +217,7 @@ closeForm.addEventListener("click",function(){
 });
 
 });
+
 
 
 
