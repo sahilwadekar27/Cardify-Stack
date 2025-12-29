@@ -1,3 +1,23 @@
+console.log("JS loaded");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const addBtn = document.querySelector(".add-btn");
+  const formModal = document.querySelector(".form-container");
+
+  console.log("addBtn:", addBtn);
+  console.log("form:", formModal);
+
+  if (!addBtn || !formModal) {
+    console.error("Add button or form not found in DOM");
+    return;
+  }
+
+  addBtn.addEventListener("click", () => {
+    formModal.classList.add("show");
+     });
+
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 
 let addNote= document.querySelector("#addNote");
@@ -217,6 +237,7 @@ closeForm.addEventListener("click",function(){
 });
 
 });
+
 
 
 
