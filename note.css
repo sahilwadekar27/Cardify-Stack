@@ -103,7 +103,11 @@ body {
     opacity: 1;
   }
 }
-
+.empty-state {
+  text-align: center;
+  color: #aaa;
+  margin-top: 100px;
+}
 
 
 .card:hover {
@@ -294,5 +298,6 @@ body {
   border: none;
   margin-top: 8px;
 }
+
 
 
