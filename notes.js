@@ -157,7 +157,8 @@ card.append(avatar,firstname,meta1,meta2,actions);
 cards_container.appendChild(card);
 
 
-})
+});
+  updateStack();
 };
 
 showCards();
@@ -216,6 +217,7 @@ closeForm.addEventListener("click",function(){
 });
 
 });
+
 
 
 
