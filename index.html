@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="note.css" />
+</head>
+<body>
+  <!-- APP LAYOUT -->
+  <div class="app-wrapper" id="stack">
+
+    <!-- LEFT CONTROLS (OUTSIDE STACK) -->
+    <div class="controls">
+      <button id="addNote">+</button>
+      <button id="up">↑</button>
+      <button id="down">↓</button>
+    </div>
+
+    <!-- STACKED CARDS -->
+    <!-- <div class="cards-container">
+      <div class="card">
+       
+          <div class="avatar"></div>
+          <h2>Fatima Uma</h2>
+
+          <div class="meta">
+            <span>Home town</span>
+            <span>Singapore</span>
+          </div>
+
+          <div class="meta">
+            <span>Bookings</span>
+            <span>3 times</span>
+          </div>
+
+          <div class="actions">
+            <button class="call">Call</button>
+            <button class="message">Message</button>
+          </div>
+      
+      </div>
+
+      <div class="card"></div>
+      <div class="card"></div>
+
+    </div> -->
+
+    <!-- RIGHT COLORS (OUTSIDE STACK) -->
+    <div class="colors">
+      <span class="c1"></span>
+      <span class="c2"></span>
+      <span class="c3"></span>
+      <span class="c4"></span>
+    </div>
+
+  </div>
+
+  <!-- ================= FORM MODAL ================= -->
+  <div class="modal hidden">
+    <div class="form-card">
+      <form>
+
+        <h3>New Call</h3>
+
+        <label>Image URL</label>
+        <input required type="text" id="imageURL"  placeholder="https://example.com/photo.jpg">
+
+        <label>Full Name</label>
+        <input required type="text" id="name"  placeholder="Enter full name">
+
+        <label>Home Town</label>
+        <input required type="text" id="town"  placeholder="Enter home town">
+
+        <label>Purpose</label>
+        <input required type="text" id="purpose"  placeholder="e.g. Quick appointment note">
+
+        <label>Category</label>
+        <div class="tags">
+          <label class="tag emergency">
+            <input type="radio" name="category" value="emergency">
+            Emergency
+          </label>
+          <label class="tag important">
+            <input type="radio" name="category" value="important">
+            Important
+          </label>
+          <label class="tag urgent">
+            <input type="radio" name="category" value="urgent">
+            Urgent
+          </label>
+          <label class="tag norush">
+            <input type="radio" name="category" value=" No Rush">
+            No Rush
+          </label>
+        </div>
+
+        <button type="submit" class="create">Create Note</button>
+        <button type="button" class="closeForm">Close</button>
+
+      </form>
+    </div>
+  </div>
+<script src="notes.js"></script>
+</body>
+</html>
