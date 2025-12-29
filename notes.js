@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 let addNote= document.querySelector("#addNote");
 let form_card = document.querySelector(".modal");
 let Upbtn=  document.querySelector("#up");
@@ -95,7 +97,11 @@ appWrapper.insertBefore(
 function showCards(){
 cards_container.innerHTML = "";
 
-let allTasks = JSON.parse(localStorage.getItem("tasks"));
+let allTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+if (allTasks.length === 0) {
+    updateStack();
+    return;
+}
 
 allTasks.forEach(function(task,index) {
 const card = document.createElement("div");
@@ -209,7 +215,8 @@ closeForm.addEventListener("click",function(){
 
 });
 
-console.log("JS Loaded");
+});
+
 
 
 
